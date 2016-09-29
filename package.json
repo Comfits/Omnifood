@@ -1,7 +1,6 @@
 {
   "name": "omnifood",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,10 +8,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.14.0",
+    "browser-sync": "^2.16.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-clean-css": "^2.0.12",
+    "gulp-clean-css": "^2.0.13",
     "gulp-sass": "^2.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Comfits/Omnifood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Comfits/Omnifood/issues"
+  },
+  "homepage": "https://github.com/Comfits/Omnifood#readme",
+  "description": ""
 }
