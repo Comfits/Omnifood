@@ -29,7 +29,11 @@ $tablet-width: "only screen and (max-width: 1200px)"
 	.plan-box
 		width: 100%
 		margin: 0
-
+	.map-box
+		height: auto
+	.section-form
+		position: relative
+		width: 100%
 @include mobile
 	h2:after
 		margin-top: 10px
@@ -50,15 +54,31 @@ $tablet-width: "only screen and (max-width: 1200px)"
 			margin-bottom: 15px
 			margin-right: 25px
 			margin: 0 35px 15px 0
+			a
+				padding: 8px 0
 	.long-copy
 		width: 85%
 		margin: 0 10% 30px
+	.box 
+		.ion-big
+			text-align: center
+		p
+			text-align: justify
+			margin: 0 30px
 	.mobile-menu
 		display: block
+	.sticky 
+		.mobile-menu
+			color: #555
+			margin: 10px
+		.main-nav li a
+			padding: 8px 0
 	.step-box:first-child
 		text-align: center
 	.plan-price,.price-per-meal,.footer-nav,.social-links
 		text-align: center
+	.map
+		height: 300px
 	.contact-form
 		width: 80%
 	footer

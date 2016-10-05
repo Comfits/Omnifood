@@ -29,6 +29,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="app/img/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="vendors/css/animate.css">
 	<!-- INDEX.CSS -->
 	<link rel="stylesheet" href="app/css/index.css">
 	<link rel="stylesheet" href="app/css/queries.css">
@@ -39,6 +40,7 @@
 		<nav>
 			<div class="row">
 				<img src="app/img/logo-white.png" alt="" class="logo">
+				<img src="app/img/logo.png" alt="" class="logo-black">
 				<a href="" class="mobile-menu"><i class="ion-navicon-round icon-mobile-menu"></i></a>
 				<ul class="main-nav">
 					<li><a href="#features">food delivery</a></li>
@@ -59,12 +61,12 @@
 		</div>
 	</header>
 	<!-- FEATURES SECTION -->
-	<section class="section-features" id="features">
+	<section class="section-features js-section-features" id="features">
 		<div class="row">
 			<h2>get food fast - not fast food.</h2>
 			<p class="long-copy">Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!</p>
 		</div>
-		<div class="row">
+		<div class="row js-wp-1">
 			<div class="col span_1_of_4 box">
 				<i class="ion-planet ion-big"></i>
 				<h3>up to 365 days/year</h3>
@@ -140,7 +142,7 @@
 			<h2>how it works - simple as 1,2,3</h2>
 		</div>
 		<div class="row">
-			<div class="col span_1_of_2  step-box">
+			<div class="col span_1_of_2  step-box js-wp-2">
 				<img src="app/img/app-iPhone.png" alt="" class="app-screen">
 			</div>
 			<div class="col span_1_of_2 step-box">
@@ -262,7 +264,7 @@
 			<h2>start eating heathy today</h2>
 		</div>
 		<div class="row">
-			<div class="col span_1_of_3">
+			<div class="col span_1_of_3 js-wp-3">
 				<div class="plan-box">
 					<div>
 						<h3>rock-star</h3>
@@ -372,69 +374,72 @@
 			</div>
 		</div>
 	</section>
-	<!-- FORM SECTION -->
-	<section class="section-form" id="signup">
-		<div class="row">
-			<h2>we're happy to hear from you</h2>
-		</div>
-		<div class="row">
-			<form action="post" class="contact-form">
-				<div class="row">
-					<div class="col span_1_of_3">
-						<label for="name">Name</label>
+	<div class="map-box">
+		<div class="map"></div>
+		<!-- FORM SECTION -->
+		<section class="section-form" id="signup">
+			<div class="row">
+				<h2>we're happy to hear from you</h2>
+			</div>
+			<div class="row">
+				<form action="post" class="contact-form">
+					<div class="row">
+						<div class="col span_1_of_3">
+							<label for="name">Name</label>
+						</div>
+						<div class="col span_2_of_3">
+							<input type="text" id="name" placeholder="Your Name" required>
+						</div>
 					</div>
-					<div class="col span_2_of_3">
-						<input type="text" id="name" placeholder="Your Name" required>
+					<div class="row">
+						<div class="col span_1_of_3">
+							<label for="email">Email</label>
+						</div>
+						<div class="col span_2_of_3">
+							<input type="email" id="email" placeholder="Your email" required>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col span_1_of_3">
-						<label for="email">Email</label>
+					<div class="row">
+						<div class="col span_1_of_3">
+							<label for="find-us">How did you find us</label>
+						</div>
+						<div class="col span_2_of_3">
+							<select name="find-us" id="find-us">
+								<option value="friends">Friends</option>
+								<option value="search" selected>Search engine</option>
+								<option value="ad">Advertisement</option>
+								<option value="orther">Orther</option>
+							</select>
+						</div>
 					</div>
-					<div class="col span_2_of_3">
-						<input type="email" id="email" placeholder="Your email" required>
+					<div class="row">
+						<div class="col span_1_of_3">
+							<label for="news">Newsletter?</label>
+						</div>
+						<div class="col span_2_of_3">
+							<input type="checkbox" id="news" checked> Yes, please
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col span_1_of_3">
-						<label for="find-us">How did you find us</label>
+					<div class="row">
+						<div class="col span_1_of_3">
+							<label for="message">Drop us a line</label>
+						</div>
+						<div class="col span_2_of_3">
+							<textarea name="message" id="message" placeholder="Your message..."></textarea>
+						</div>
 					</div>
-					<div class="col span_2_of_3">
-						<select name="find-us" id="find-us">
-							<option value="friends">Friends</option>
-							<option value="search" selected>Search engine</option>
-							<option value="ad">Advertisement</option>
-							<option value="orther">Orther</option>
-						</select>
+					<div class="row">
+						<div class="col span_1_of_3">
+							<label for="">&nbsp;</label>
+						</div>
+						<div class="col span_2_of_3">
+							<input type="submit" value="Send it!" class="btn btn-full">
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col span_1_of_3">
-						<label for="news">Newsletter?</label>
-					</div>
-					<div class="col span_2_of_3">
-						<input type="checkbox" id="news" checked> Yes, please
-					</div>
-				</div>
-				<div class="row">
-					<div class="col span_1_of_3">
-						<label for="message">Drop us a line</label>
-					</div>
-					<div class="col span_2_of_3">
-						<textarea name="message" id="message" placeholder="Your message..."></textarea>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col span_1_of_3">
-						<label for="">&nbsp;</label>
-					</div>
-					<div class="col span_2_of_3">
-						<input type="submit" value="Send it!" class="btn btn-full">
-					</div>
-				</div>
-			</form>
-		</div>
-	</section>
+				</form>
+			</div>
+		</section>
+	</div>
 	<!-- FOOTER -->
 	<footer>
 		<div class="row">
@@ -461,6 +466,9 @@
 		</div>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js"></script>
+	<script src="vendors/js/jquery.waypoints.min.js"></script>
+	<script src="vendors/js/gmap.js"></script>
 	<script src="app/js/script.js"></script>
 </body>
 </html>
